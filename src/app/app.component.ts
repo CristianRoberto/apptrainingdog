@@ -35,25 +35,40 @@ export class AppComponent {
     this.navigate =
     [
       {
-        title : "uno",
+        title : "Perfil",
         url   : "/login",
         icon  : "person-outline"
       },
       {
-        title : "dos",
-        url   : "/registro",
+        title : "Frutas y Legumbres",
+        url   : "../tabs/tab3",
+        icon  : "person-outline"
+      },
+      {
+        title : "Enlatados y Convservass",
+        url   : "../tabs/tab3",
         icon  : "flash-outline"
       },
       {
-        title : "tres",
-        url   : "/edituser",
+        title : "Carnes y Embutidos",
+        url   : "../tabs/tab3",
         icon  : "glasses-outline"
       },
       {
-        title : "tres",
-        url   : "/carrito",
-        icon  : "cart-outline"
+        title : "Pescados y Mariscos",
+        url   : "../tabs/tab3",
+        icon  : "glasses-outline"
       },
+      {
+        title : "Licoreria",
+        url   : "../tabs/tab3",
+        icon  : "beer-outline"
+      },
+      {
+        title : "Carrito",
+        url   : "../tabs/tab4",
+        icon  : "beer-outline"
+      }
     ]
   }
 }

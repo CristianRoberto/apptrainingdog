@@ -1,3 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="danger" routerLink="../tabs/tab1">
+      <ion-icon slot="start" name="return-up-back-outline"></ion-icon>
+    </ion-buttons>   
+  </ion-toolbar>
+</ion-header>
 <ion-content>
   <ion-buttons slot="start" routerLink="../tabs/tab1"></ion-buttons>
    <div class="container">
@@ -13,15 +20,15 @@
          
          <ion-item>
            <ion-icon slot="start" name="at"></ion-icon>
-           <ion-input placeholder="Correo"></ion-input>
+           <ion-input placeholder="Correo"  required></ion-input>
          </ion-item>
          <ion-item>
-           <ion-icon slot="start" name="lock"></ion-icon>
-           <ion-input placeholder="Contraseña" type="pasword"></ion-input>
+          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
+          <ion-input placeholder="Password" type="password"  required></ion-input>
          </ion-item>
        </ion-list>
        <div>
-          <ion-button color="danger" aling="center" routerLink="../tabs/tab1" type="submit">INICIAR</ion-button>
+          <ion-button color="danger" align="center" routerLink="../tabs/tab1" type="submit">INICIAR</ion-button>
        </div>
        <div>
         <ion-button color="danger" (click)="ingresar('google')">GOOGLE</ion-button>

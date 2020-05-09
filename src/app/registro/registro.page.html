@@ -1,11 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="danger" routerLink="../tabs/tab1">
+      <ion-icon slot="start" name="return-up-back-outline"></ion-icon>
+    </ion-buttons>   
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
-  <ion-buttons slot="start" routerLink="../tabs/tab1"></ion-buttons>
   <div class="container">
     <div class="header">
-      <h3>Welcome!</h3>
+      <h3>BIENVENIDOS!</h3>
       <p>REGISTRO</p>
     </div>
     <div class="body">
+      <form>
       <ion-list>
         <ion-item>
           <ion-icon slot="start" name="person"></ion-icon>
@@ -17,7 +25,7 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="albums-outline"></ion-icon>
-          <ion-input placeholder="Cedula" maxlength="10" required></ion-input>
+          <ion-input placeholder="Cedula" maxlength="10" required type="number"  required></ion-input>
         </ion-item>
         <ion-item>
         <ion-icon slot="start" name="phone-portrait-outline"></ion-icon>
@@ -25,16 +33,18 @@
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="at"></ion-icon>
-          <ion-input placeholder="Email" type="email"></ion-input>
+          <ion-input placeholder="Email" type="email"  required></ion-input>
         </ion-item>
         <ion-item>
           <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-          <ion-input placeholder="Password" type="pasword"></ion-input>
+          <ion-input placeholder="Password" type="password"  required></ion-input>
         </ion-item>
-    </ion-list> 
+      </ion-list>
+        <div>
+        <ion-button color="danger" type="submit" align="center">REGISTRARSE</ion-button>
+        </div>
+      </form> 
     </div>
-  <div>
-    <ion-button color="danger" type="submit">REGISTRARSE</ion-button>
-  </div>
+  
   </div>  
 </ion-content>
