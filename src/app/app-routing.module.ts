@@ -7,10 +7,21 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'cart-p',
-    loadChildren: () => import('./cart-p/cart-p.module').then( m => m.CartPPageModule)
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
- 
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'edituser',
+    loadChildren: () => import('./edituser/edituser.module').then( m => m.EdituserPageModule)
+  },
+  {
+    path: 'carrito',
+    loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
+  }
 
 ];
 @NgModule({
