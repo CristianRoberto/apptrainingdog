@@ -19,7 +19,7 @@ const routes: Routes = [
     loadChildren: () => import('./edituser/edituser.module').then( m => m.EdituserPageModule)
   },
   {
-    path: 'carrito',
+    path: 'carrito', 
     loadChildren: () => import('./carrito/carrito.module').then( m => m.CarritoPageModule)
   },
   
