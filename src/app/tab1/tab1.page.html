@@ -15,11 +15,63 @@
   
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Compra Rapida</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button aria-expanded="fullscreen" color="danger" routerLink="../../../login">prueba</ion-button>
-  
+
+
+    
+  <ion-card *ngFor="let cat of itens" class="category-block">
+    
+    <ion-card-header no-padding class="category-banner">
+      <ion-card-title>
+        {{cat.category}}
+      </ion-card-title>
+     
+      
+    </ion-card-header>
+ 
+  <ion-slides [options]="sliderConfig">
+
+        <ion-slide *ngFor="let product of cat.products"> 
+          
+       
+          <ion-card-header>
+            <ion-card-content>
+              {{product.name}}-<p>Precio:</p>{{product.price}}
+            </ion-card-content>
+       
+            <ion-card-content> 
+          <ion-img src="https://image.freepik.com/vector-gratis/coleccion-diferentes-tipos-snacks_23-2147927928.jpg"></ion-img>
+        
+        </ion-card-content>
+       
+        
+      </ion-card-header>
+
+        </ion-slide>
+        
+   </ion-slides>
+   
+  </ion-card>  
+
+<ion-card>
+
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide>
+      <h1>Slide 1</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 2</h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Slide 3</h1>
+    </ion-slide>
+  </ion-slides>
+
 
   
+</ion-card>
+
+    
 </ion-content>
