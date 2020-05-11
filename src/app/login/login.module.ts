@@ -9,7 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
-
+import { ComponentModule} from '../component/component.module'
 @NgModule({
   providers: [ AngularFireAuth ],
   imports: [
@@ -17,7 +17,8 @@ import { auth } from 'firebase/app';
     FormsModule,
     IonicModule,
     //AngularFireAuth,
-    LoginPageRoutingModule
+    LoginPageRoutingModule,
+    ComponentModule
   ],
   declarations: [LoginPage]
 })

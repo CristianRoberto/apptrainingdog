@@ -8,12 +8,15 @@ import { Tabs4PageRoutingModule } from './tabs4-routing.module';
 
 import { Tabs4Page } from './tabs4.page';
 
+import { ComponentModule} from '../component/component.module'
 @NgModule({
+   
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tabs4PageRoutingModule
+    Tabs4PageRoutingModule,
+    ComponentModule,
   ],
   declarations: [Tabs4Page]
 })

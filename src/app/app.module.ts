@@ -15,11 +15,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 import { AngularFireAuthModule, AngularFireAuth } from '@Angular/fire/auth';
+import { ComponentModule} from './component/component.module'
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule,IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(firebaseConfig)],
+  imports: [  
+    ComponentModule,
+    BrowserModule,IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(firebaseConfig)],
   providers: [
     AngularFireModule,
     AngularFireAuthModule,
