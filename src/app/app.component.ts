@@ -34,8 +34,10 @@ export class AppComponent {
   {
     this.navigate =
     [
+
+      
       {
-        title : "Perfil",
+        title : "MiPerfil",
         url   : "/user",
         icon  : "person-outline"
       },
@@ -44,31 +46,14 @@ export class AppComponent {
         url   : "../login",
         icon  : "person-outline"
       },
+        
       {
-        title : "Enlatados y Convservass",
-        url   : "../tabs/tab3",
-        icon  : "flash-outline"
-      },
-      {
-        title : "Carnes y Embutidos",
+        title : "Trabaje con Nosotros",
         url   : "../tabs/tab3",
         icon  : "glasses-outline"
+      
       },
-      {
-        title : "Pescados y Mariscos",
-        url   : "../tabs/tab3",
-        icon  : "glasses-outline"
-      },
-      {
-        title : "Licoreria",
-        url   : "../tabs/tab3",
-        icon  : "beer-outline"
-      },
-      {
-        title : "Carrito",
-        url   : "../tabs/tab4",
-        icon  : "beer-outline"
-      }
+
     ]
   }
 }
