@@ -26,7 +26,23 @@ const routes: Routes = [
   {
     path: 'carP',
     loadChildren: () => import('./cart-p/cart-p.module').then( m => m.CartPPageModule)
+  },  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'admincli',
+    loadChildren: () => import('./admincli/admincli.module').then( m => m.AdmincliPageModule)
+  },
+  {
+    path: 'addproduct',
+    loadChildren: () => import('./addproduct/addproduct.module').then( m => m.AddproductPageModule)
+  },
+  {
+    path: 'addtienda',
+    loadChildren: () => import('./addtienda/addtienda.module').then( m => m.AddtiendaPageModule)
   }
+
 
 ];
 @NgModule({
