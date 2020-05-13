@@ -36,12 +36,12 @@ export class AppComponent {
     [
       {
         title : "Perfil",
-        url   : "/login",
+        url   : "/user",
         icon  : "person-outline"
       },
       {
-        title : "Frutas y Legumbres",
-        url   : "../tabs/tab3",
+        title : "Login",
+        url   : "../login",
         icon  : "person-outline"
       },
       {

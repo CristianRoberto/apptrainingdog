@@ -1,8 +1,8 @@
 ion-content {
     --offset-top: 0px;
     --offset-bottom: 0px;
-    --background: #242A34;
-    --color: #FFF;
+    --background: rgb(255, 255, 255);
+    --color:  black;//registra tu cuenta
     .container {
         display: flex;
         flex-direction: column;
@@ -14,10 +14,15 @@ ion-content {
             flex: 1;
             justify-content: center;
             text-align: center;
-            padding-top: 20px;
-           
+            padding-top: 10px;
+            .title {
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
             h3 {
-                color: #06bebd;
+                color: #06bebd; //bienvenido
             }
         }
         .body {
@@ -31,14 +36,14 @@ ion-content {
                     --border-color: transparent!important;
                     --highlight-height: 0;
                     --background: none;
-                    background: rgba(255,255,255,0.1);
+                    background:  rgba(191, 247, 214, 0.911);
                     border-radius: 4px;
                     margin-bottom: 10px;
                     ion-icon {
-                        color: #FAFAFA;
+                        color:  black;
                     }
                     ion-input {
-                        --color: #FFF;
+                        --color:  black;
                     }
                 }
             }
@@ -46,10 +51,12 @@ ion-content {
         .footer {
             display: flex;
             a {
-                color: #06bebd;
+                color: #06bebd; //footer registrate aqui
                 font-weight: 600;
                 text-decoration: none;
             }
         }
+        
+        
     }
 }

@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start" color="danger" routerLink="../user">
+      <ion-icon slot="start" name="return-up-back-outline"></ion-icon>
+    </ion-buttons>   
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <div class="title">
+        <img src="https://image.flaticon.com/icons/png/512/149/149071.png">
+      </div>
+    </div>
+    <div class="body">
+     
+      <ion-list>
+        <ion-item>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-input placeholder="Nombres de la tienda" minlength="5" maxlength="40" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-input placeholder="Tipo" minlength="5" maxlength="40" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-input placeholder="Direccion" minlength="5" maxlength="40" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-input placeholder="Persona Responsable" minlength="5" maxlength="40" required></ion-input>
+        </ion-item> 
+        <ion-button color="danger"   >AGREGAR</ion-button>       
+      </ion-list>
+        <div>
+          <ion-button color="danger" routerLink="../addproduct">AGREGAR PRODUCTO</ion-button>
+        </div>
+
+      
+    </div>
+  
+  </div>  
+</ion-content>
