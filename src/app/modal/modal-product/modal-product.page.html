@@ -1,13 +1,16 @@
-<ion-header>
-  <div style="border: black 2px solid; width: 100%; color: black;">
-     Producto     
+
    
-    <ion-button style="--background:transparent; color: black;" (click)="exit()">cerrar</ion-button>
-
-  </div>
-
-
-</ion-header>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      
+      <ion-title>
+        <ion-icon name="chevron-back-outline" (click)="exit()"></ion-icon>     Comprar
+      </ion-title>
+    </ion-toolbar>
+    
+      
+  </ion-header>
+  
 
 <ion-content>
   <ion-card>

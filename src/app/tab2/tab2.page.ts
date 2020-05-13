@@ -18,21 +18,45 @@ export class Tab2Page implements OnInit {
 products=[]
 
   ngOnInit(){
+    //obtiene los productos del servicio ProductoService  y los guarda en un arreglo
  this.products= this.ProductoService.getProduct(); 
-console.log(this.products);
 
 }
 
+/// envento modal 
+
 async presentModal() {
   const modal = await this.modalctr.create({
+  
     component: ModalProductPage,
+    
+    // aqui componentes que se pueden enviar al modal 
     componentProps: {
       'firstName': 'Douglas',
       'lastName': 'Adams',
       'middleInitial': 'N'
-    }
-  });
+      
+
+ 
+    },
+  }
+  
+  );
+ 
   return await modal.present();
 }
-  
+
+//evento de refresco de pantalla se le puede pasar un arreglo y un limite de carga de archivos 
+
+  doRefresh(event) {
+    console.log('Begin async operation');
+
+    setTimeout(() => {
+      console.log('Async operation has ended');
+      event.target.complete();
+    }, 2000);
+  }
+
+
+
 }

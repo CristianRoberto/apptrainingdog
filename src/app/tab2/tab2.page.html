@@ -10,20 +10,29 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+ 
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Productos</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-searchbar showCancelButton="focus" cancelButtonText="Custom Cancel"></ion-searchbar>
+  
+  
+ 
+  
+  
+  
   <ion-grid>
-
     <ion-row  class="row1"  >
-      <ion-col class="col1" size-lg="6" size-md="6"   size-sm="4" size-xs="6"   *ngFor="let pro of products"  >
+      <ion-col class="col1" size-lg="3" size-md="4"   size-sm="4" size-xs="6"   *ngFor="let pro of products"  >
             <ion-card  class="card" (click)="presentModal()">  
                
              <div class="img2">
-              <img  src="https://image.freepik.com/vector-gratis/coleccion-diferentes-tipos-snacks_23-2147927928.jpg">
+              <ion-img  src="{{pro.img}}"> </ion-img>
              
             
              </div>
