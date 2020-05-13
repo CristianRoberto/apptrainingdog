@@ -9,7 +9,7 @@ export class CategoryService {
   private datas=[
 
     {id:1,name:'PESCADOS Y MARICOS ', quantity:'20' ,img :"https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_078.jpg"},
-    {id:1,name:'RESTAURANTE Y COMIDA RAPIDA ', quantity:'20' ,img :"https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_078.jpg"},
+    {id:1,name:'RESTAURANTE Y COMIDA RAPIDA ', quantity:'20' ,img :"https://www.google.es/url?sa=i&url=https%3A%2F%2Fwww.pngocean.com%2Fgratis-png-clipart-aeewe&psig=AOvVaw3vtv9-h0YtM_u6n-bfR97l&ust=1589465853456000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLj9jPmDsekCFQAAAAAdAAAAABAD"},
     {id:1,name:'TIENDA DE VIVERES ', quantity:'20' ,img :"https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_078.jpg"},
     {id:1,name:'LICORERIAS ', quantity:'20' ,img :"https://mercatperegarau.es/wp-content/uploads/2016/12/315_Francisco-Riera-Llorens-Maria-del-Carmen-del-%C3%81lamo-Acevedo-Peix-Peixateria-Vicenta-Pto-86-87-88_078.jpg"},
     {id:1,name:'CARNES Y POLLOS', quantity:'25' ,img :"http://www.comercialcastro.cl/img/uploads/como-amaciar-carnes.jpg"},
