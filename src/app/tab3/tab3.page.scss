@@ -1,19 +1,24 @@
 .card-background-page {
 
+
+  
+
     ion-card {
       position: relative;
       text-align: center;
+      
     }
   
+    
     .card-title {
       position: absolute;
-      top: 30%;
-      font-size: 2.3em;
-      -webkit-text-stroke: 2.2px black;
-      border: red 5px hidden;
+      top: 25%;
+      font-size: 2.2em;
+      -webkit-text-stroke: 2px black;
+   
       width: 100%;
       font-weight: bold;
-      color: #FF931E;
+      color: #fff;
     }
   
     .card-subtitle {
