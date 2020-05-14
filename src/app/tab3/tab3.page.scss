@@ -1,9 +1,16 @@
+
+.imgs{
+  filter:brightness(0.6); //filtro de imagen
+}
+
+
 .card-background-page {
 
     ion-card {
       position: relative;
       text-align: center;
     }
+
   
     .card-title {
       position: absolute;
@@ -12,6 +19,7 @@
       width: 100%;
       font-weight: bold;
       color: #fff;
+      
     }
   
     .card-subtitle {
