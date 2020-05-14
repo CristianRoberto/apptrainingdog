@@ -3,22 +3,9 @@
     <ion-buttons slot="start">
       <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
-   
-   
     <ion-title>
-     SECCIONES
-     
-
-     <img class="foto2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/LDUQuitologo2.png/240px-LDUQuitologo2.png" width="40px" height="40px" style="float: CENTER;">
-
-    
-
-     
+      Categorias
     </ion-title>
-  
-
-
-
   </ion-toolbar>
 </ion-header>
  <style>
@@ -48,10 +35,9 @@
 <ion-content class="card-background-page">
  <ion-grid>
   <ion-row>
-    <ion-col size-lg="4" size-md="4"   size-sm="3" size-xs="12" *ngFor="let cat of categoryP"  >
+    <ion-col size-lg="3" size-md="4"   size-sm="6" size-xs="12" *ngFor="let cat of categoryP"  >
 <ion-card>
-    <img src="{{cat.img}}" class="imgs">
-
+    <img src="{{cat.img}}" class="imgs"/>
     <div class="card-title">{{cat.name}}</div>
     <div class="card-subtitle"> {{cat.quantity}}Productos</div>
   </ion-card>
