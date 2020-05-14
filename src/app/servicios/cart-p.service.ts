@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class CartPService {
   private data=[
     {
-      category: 'Frutas', 
+      category: 'Tienda 1', 
       expanded: true,
           products: [
             {id:0,name:'Manzana', price:'8'},
@@ -19,7 +19,7 @@ export class CartPService {
           ]
     }, 
     {
-      category:'Favoritos',
+      category:'tienda 2',
       expanded:true,
           products:[
             {id:0,name:'Manzana', price:'8'},
@@ -29,6 +29,19 @@ export class CartPService {
             
           ]
     
+    },
+    {
+      category: 'Tienda 3', 
+      expanded: true,
+          products: [
+            {id:0,name:'Manzana', price:'8'},
+            {id:0,name:'Uva', price:'6'},
+            {id:0,name:'Pera', price:'8'},
+            {id:0,name:'Pera', price:'8'},
+            {id:0,name:'Pera', price:'8'},
+            {id:0,name:'Pera', price:'8'}
+
+          ]
     }
     
     

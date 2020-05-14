@@ -4,7 +4,7 @@
       <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Compra Rapida
+     Tiendas Favoritas
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,13 +14,9 @@
 <ion-content [fullscreen]="true">
   
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Compra Rapida</ion-title>
-    </ion-toolbar>
+   
   </ion-header>
-
-
-    
+   
   <ion-card *ngFor="let cat of itens" class="category-block">
     
     <ion-card-header no-padding class="category-banner">
@@ -37,16 +33,7 @@
           
        
           <ion-card-header>
-            <ion-card-content>
-              {{product.name}}-<p>Precio:</p>{{product.price}}
-            </ion-card-content>
-       
-            <ion-card-content> 
-          <ion-img src="https://image.freepik.com/vector-gratis/coleccion-diferentes-tipos-snacks_23-2147927928.jpg"></ion-img>
-        
-        </ion-card-content>
-       
-        
+           
       </ion-card-header>
 
         </ion-slide>
@@ -57,17 +44,7 @@
 
 <ion-card>
 
-  <ion-slides pager="true" [options]="slideOpts">
-    <ion-slide>
-      <h1>Slide 1</h1>
-    </ion-slide>
-    <ion-slide>
-      <h1>Slide 2</h1>
-    </ion-slide>
-    <ion-slide>
-      <h1>Slide 3</h1>
-    </ion-slide>
-  </ion-slides>
+  
 
 
   
