@@ -10,17 +10,21 @@ import { ModalProductPage } from '../modal/modal-product/modal-product.page';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page implements OnInit {
-
+public cont =[];
   constructor(private ProductoService:ProductoService,private router:Router, private modalctr:ModalController ) {
 
-  }
+  } 
 
 products=[]
 
   ngOnInit(){
     //obtiene los productos del servicio ProductoService  y los guarda en un arreglo
- this.products= this.ProductoService.getProduct(); 
-
+  this.products= this.ProductoService.getProduct(); 
+  //console.log(this.products.length)
+    for(let i=0 ; i<this.products.length;i++){
+        this.cont.push(1)
+    }
+    console.log(this.cont)
 }
 
 /// envento modal 
@@ -57,6 +61,13 @@ async presentModal() {
     }, 2000);
   }
 
+ sum(i){
+  this.cont[i]++;
+ }
 
+ rest(i){
+  
+   if(this.cont[i]>1) this.cont[i]--;
+ }
 
 }

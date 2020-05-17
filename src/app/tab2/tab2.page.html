@@ -30,7 +30,7 @@
   
   <ion-grid>
     <ion-row  class="row1"  >
-      <ion-col class="col1" size-lg="3" size-md="4"   size-sm="4" size-xs="6"   *ngFor="let pro of products"  >
+      <ion-col class="col1" size-lg="3" size-md="4"   size-sm="4" size-xs="6"   *ngFor="let pro of products; let i = index"  >
             <ion-card  class="card"  class="tarjeta" style="margin: 0px;" >  
                
           
@@ -45,7 +45,7 @@
   
             
               <div class="chip"> 
-                <ion-chip style="background-color: yellowgreen;">
+                <ion-chip style=" background-color: yellowgreen;">
                   <ion-label>{{pro.price}} $</ion-label>
                    </ion-chip >
               </div> 
@@ -65,10 +65,14 @@
 
 
                 
-                <ion-chip style="width: 100%;">
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-label>Default</ion-label>
-                  <ion-icon style="float:right ;" name="add-outline"></ion-icon >
+                <ion-chip style="width: 100%; justify-content: center;">
+                  <ion-icon name="remove-outline" (click)="rest(i)" ></ion-icon>
+
+                  
+                  
+                  <ion-label  >{{this.cont[i]}}</ion-label>
+                  
+                  <ion-icon style="float:right ;" name="add-outline" (click)="sum(i)"></ion-icon >
 
   
                     
