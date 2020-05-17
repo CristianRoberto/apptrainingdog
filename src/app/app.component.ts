@@ -49,7 +49,7 @@ export class AppComponent {
         
       {
         title : "Trabaje con Nosotros",
-        url   : "../tabs/tab3",
+        url   : "../agregartiendas",
         icon  : "glasses-outline"
       
       },
