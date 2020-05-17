@@ -14,12 +14,10 @@ import { Router } from '@angular/router';
 export class Tab1Page implements OnInit{
 
   
-sliderConfig={
-
-  spaceBetween:2,
-  centeredSlides:true,
-  slidesPreview:1.6
-}
+  slideOptsOne=
+  {
+   pager:true
+  };
 
 
 
@@ -42,7 +40,7 @@ addToCartProduct(product){
 this.cartPService.addProduct(product); 
 
 
-}
+} 
 openCart(){
 
   this.router.navigate(['cartP'])

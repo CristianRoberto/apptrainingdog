@@ -3,7 +3,8 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class CartPService {
+export class ProductTService {
+
   private data=[
     {
       category: 'Frutas', 
@@ -34,26 +35,31 @@ export class CartPService {
     
     ]; 
     
-    private cart = []; 
     
-    
-      constructor() { 
-    
-    
-      }
+
+
       
+  private cart = []; 
     
-      getProduct(){
-      return this.data;   
-      }
     
-    getCart(){
-    return this.cart
-    
-    }
-    
-    addProduct(product){
-    this.cart.push(product); 
-    
-    }  
+  constructor() { 
+
+
+  }
+  
+
+  getProduct(){
+  return this.data;   
+  }
+
+getCart(){
+return this.cart
+
+}
+
+addProduct(product){
+this.cart.push(product); 
+
+}  
+
 }
