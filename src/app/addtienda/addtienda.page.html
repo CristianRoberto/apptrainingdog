@@ -32,14 +32,35 @@
           <ion-icon slot="start" name="person"></ion-icon>
           <ion-input placeholder="Persona Responsable" minlength="5" maxlength="40" required></ion-input>
         </ion-item> 
-        <ion-button color="danger"   >AGREGAR</ion-button>       
-      </ion-list>
+        <div>
+        <ion-button color="danger"   >AGREGAR</ion-button>
+        </div>
         <div>
           <ion-button color="danger" routerLink="../addproduct">AGREGAR PRODUCTO</ion-button>
         </div>
-
+      </ion-list>
       
     </div>
   
+  </div>
+  <div class="containerTienda"> 
+    <div class="bodyTienda" >
+      <ion-list *ngFor="let tie of tienda" >
+        <div class="container" >
+          <ion-item>
+            <div class="nombreTienda">
+              <ion-input class="nombreTienda">{{tie.name}}</ion-input>
+              <ion-img src="{{tie.img}}"> </ion-img>
+            </div>
+            <div>
+              <ion-input>{{tie.direccion}}</ion-input>
+              <ion-input>{{tie.tipo}}</ion-input>
+            </div>
+          </ion-item>
+        </div>
+         
+      </ion-list>
+            
+    </div>
   </div>  
 </ion-content>

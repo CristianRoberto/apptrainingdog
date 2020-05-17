@@ -1,0 +1,50 @@
+ion-content {
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        
+        .body {
+            flex: 1.5;
+            ion-list {
+                --background: none;
+                background: none;
+                margin-bottom: 0!important;
+                
+                ion-item {
+                    --border-color: transparent!important;
+                    --highlight-height: 0;
+                    --background: none;
+                    
+                   
+                    
+                    ion-img{
+                        width: 150px; 
+                        height: 150px;
+                    }
+                    ion-input{
+                        margin: 10px;
+                        width: 70px; 
+                        height: 35px;
+                    }
+                }
+            }
+            ion-button{
+               
+                border-radius: 4px;
+                margin-bottom: 10px;
+                display:block;
+                margin-left: 10px;
+                margin-right: 10px;
+
+
+            }
+            
+        }
+        
+        
+        
+    }
+}
