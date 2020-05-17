@@ -4,7 +4,7 @@
       <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Compra Rapida
+     Tiendas Favoritas
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,21 @@
 
 
 <ion-content [fullscreen]="true">
+
+  
+  <ion-header collapse="condense">
+   
+  </ion-header>
+   
+  <ion-card *ngFor="let cat of itens" class="category-block">
+    
+    <ion-card-header no-padding class="category-banner">
+      <ion-card-title>
+        {{cat.category}}
+      </ion-card-title>
+     
+      
+    </ion-card-header>
  
 
 
@@ -37,16 +52,23 @@
                       </ion-card-content>
                     </ion-card>
                   </ion-slide>
-                 </ion-slides>
+
+                </ion-slides>
                 
                 
           </ion-col>
-          
+           
+
       </ion-row>
 
 
   </ion-grid>
 
+       
+   
+  </ion-card>  
+
+<ion-content>
 
 <div class="contenedor">  </div>
 

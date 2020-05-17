@@ -28,19 +28,12 @@
           <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
           <ion-input placeholder="Password" type="password"  required></ion-input>
          </ion-item>
-         <div class="footer">
-          <a routerLink="../registro">Olvidaste tu contrasena?</a>
-        </div>
+     
        </ion-list>
        <div>
-          <ion-button routerLink="../tabs/tab1" color="danger" expand="block" size="default">INICIAR</ion-button>
+          <ion-button routerLink="../tabs/tab1" >INICIAR</ion-button>
        </div>
-       <div>
-        <ion-button (click)="ingresar('google')" size="default">
-       GOOGLE
-        </ion-button>
-        <ion-button (click)="ingresar('facebook')" size="default">FACEBOOK</ion-button>
-       </div>
+       
      </div>
      <div class="footer">
        No tienes una cuenta?.. <a routerLink="../registro">  Registrate Aquí </a>

@@ -1,9 +1,40 @@
-<app-header titulo="Carrito">
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button color="primary"></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Carrito
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-</app-header>
 
-
-
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <div class="container">
+      <div class="body" >
+        <ion-list *ngFor="let pro of products" >
+            <ion-item>
+              <div>
+                <ion-img src="{{pro.img}}"> </ion-img>
+              </div>
+              <div>
+                <ion-input>{{pro.name}}</ion-input>
+                <ion-input>Precio: ${{pro.price}}</ion-input>
+              </div>
+              <div>
+                <ion-input type="number" placeholder="Cantidad"></ion-input>
+              </div>  
+              </ion-item>
+        </ion-list>
+        <div>
+          <ion-input>TOTAL<ion-input type="number" placeholder="$$"></ion-input></ion-input>
+          
+        </div>
+        <div>
+          <ion-button >Confirmar Compra</ion-button>
+       </div>
+      </div>
+    </div>
 </ion-content>
+  
