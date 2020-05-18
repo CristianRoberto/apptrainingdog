@@ -1,5 +1,6 @@
 .imgs{
-  filter:brightness(0.5); //filtro de imagen
+  filter:brightness(0.4); //filtro de imagen
+
 }
 
 
@@ -8,11 +9,12 @@
   ion-card {
     position: relative;
     text-align: center;
+  
   }
 
   .card-title {
     position: absolute;
-    top: 32%;
+    top: 30%;
     font-size: 3.3em;
     width: 100%;
     font-weight: bold;
