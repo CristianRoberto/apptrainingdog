@@ -1,30 +1,31 @@
+h1 {
+    font-family: 'Lucida Fax';
+    margin-top: 5px;
+    
+
+}
+
+h2{
+    text-align: center;
+    font-family: 'Lucida Fax';
+    margin-top: 10px;
+
+}
+
+
+
 ion-content {
-    --offset-top: 0px;
-    --offset-bottom: 0px;
+    margin-top: 200px;
     --background: rgb(255, 255, 255);
-    --color:  black;//registra tu cuenta
+    --color:  rgb(0, 0, 0);//registra tu cuenta
     .container {
         display: flex;
         flex-direction: column;
         justify-content: left;
         align-items: left;
-        height: 100%;
         
-        .header {
-            flex: 1;
-            justify-content: center;
-            text-align: center;
-           
-            .title {
-                img {
-                    height: 100px;
-                    width: 100px;
-                }
-            }
-            h3 {
-                color: #06bebd; //bienvenido
-            }
-        }
+        
+     
         .body {
             flex: 1.5;
             ion-list {
@@ -36,18 +37,13 @@ ion-content {
                     --border-color: transparent!important;
                     --highlight-height: 0;
                     --background: none;
-                    background:  rgba(191, 247, 214, 0.911);
+                    background:  rgba(17, 17, 17, 0.911);
                     border-radius: 8px;
                     margin-bottom: 10px;
                     margin-left: 15px;
                     margin-right: 15px;
                    
-                    ion-icon {
-                        color:  black;
-                    }
-                    ion-input {
-                        --color:  black;
-                    }     
+                      
                } 
                ion-button {
                     margin-bottom: 10px;
@@ -68,22 +64,22 @@ ion-content {
        
        
         .bodyTienda {
-            flex: 1.5;
+            flex: 3.5;
             ion-list {
                 --background: none;
                 background: none;
                 overflow-x: auto !important;
                 white-space: nowrap;
                 background:  rgba(191, 247, 214, 0.911);
-                border: 5px solid white;
+                border: 4.5px solid rgb(245, 245, 245);
                 
                
                 ion-item {
                     --border-color: transparent!important;
                     --highlight-height: 0;
                     --background: none;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                    margin-left: -15px;
+                    margin-right: 10px;
                     ion-img{
                         
                         width: 175px; 
@@ -93,19 +89,27 @@ ion-content {
                     ion-input{
                         overflow-x: auto !important;
                         white-space: nowrap;   
-                        width: 130px; 
-                        height: 35px;
-                        margin-left: 10px;
-                        margin-right: 10px;
-                        Font-size: 14px;
+                        width: 10000px; 
+                        height: 25px;
+                        margin-top: 1px;
+                        margin-left: 5px;
+                        text-align: center;
+                        Font-size: 24px;
+                        
+                        font-family: 'Gabriola';
                     }
+
+           
                     .nombreTienda{
                         ion-input{
                             overflow-x: auto !important;
                             white-space: nowrap;
+                            Font-size: 31px;
                             width: 150px; 
-                            height: 35px;
-                            margin-left: 10px;
+                            height: 40px;
+                            margin-left: 15px;
+                            margin-top: 2px;
+                            font-family: 'Monotype Corsiva';
                             
                         }
                     }
@@ -114,5 +118,6 @@ ion-content {
         }   
     }
 }
+
 
 
