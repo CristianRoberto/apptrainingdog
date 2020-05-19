@@ -6,45 +6,143 @@
 
 <ion-content>
 
+
+  
+
+
   <ion-grid>
-    <ion-row>
-      <ion-col size-lg="3" size-md="4"   size-sm="4" size-xs="6">
-        <img  class="imgs" src="https://i.pinimg.com/236x/e4/f3/40/e4f3408cee71e3a925da85d1968a7e2d--fitness-foods-fitness-nutrition.jpg">
-      </ion-col>
-      <ion-col>
-        <div class="divImgs">
-        
-        <img  class="imgs" src="https://i.pinimg.com/236x/e4/f3/40/e4f3408cee71e3a925da85d1968a7e2d--fitness-foods-fitness-nutrition.jpg">
-        </div>
-      </ion-col >
-      <ion-col size-lg="3" size-md="4"   size-sm="4" size-xs="6">
-        <div class="divImgs">
-        <img class="imgs" src="https://i.pinimg.com/236x/e4/f3/40/e4f3408cee71e3a925da85d1968a7e2d--fitness-foods-fitness-nutrition.jpg">
-        </div>
+    <div > 
+     <ion-row  *ngFor="let cat of products">  
+       
 
-      </ion-col >
+      <ion-list>
+      <ion-item  style="width: 100%;" size-lg="12" size-md="12"   size-sm="12" size-xs="12"  
+      text.left button tappable
+      (click)="cat.expanded =!cat.expanded"   
+      
+      > <!--  <ion-thumbnail item-start> 
+        <img src="https://www.redagricola.com/cl/assets/uploads/2017/08/manazana-792x591-c-default.jpg">
+           </ion-thumbnail>    -->
+      {{cat.category}}
+    
+  
+</ion-item >
+    </ion-list>
+
+
+      <ion-row *ngIf="cat.expanded">
+      
+     <ion-col class="col1" size-lg="3" size-md="4"   size-sm="4" size-xs="6"   *ngFor="let pro of cat.products; let i = index"   >
+       
+       <ion-card  class="card"  class="tarjeta" style="margin: 0px;" >  
+          
      
-      <ion-col size-lg="3" size-md="4"   size-sm="4" size-xs="6">
-        
-        <div class="divImgs">
-        
-        <img  class="imgs" src="https://i.pinimg.com/236x/e4/f3/40/e4f3408cee71e3a925da85d1968a7e2d--fitness-foods-fitness-nutrition.jpg">
-      </div>
-      <a class="item item-icon-right assertive" href="#"  style="border-width: 0px; border-style: none;" >
-        <p  class="ps">Manzana <br/>
-          <span  class="spans"> 14 </span>    <br> 
-          <span  class="spans"> Tienda Nose</span>
-        
-          <ion-icon name="cart-outline" class="is"></ion-icon>
-        </p>
-        
+   
+         <div class="img2"  (click)="presentModal()"> 
+   
+            
+             
+            
+           
+         <ion-img  src="{{pro.img}}"> </ion-img>
+   
+       
+         <div class="chip"> 
+           <ion-chip style=" background-color: yellowgreen;">
+             <ion-label>{{pro.price}} $</ion-label>
+              </ion-chip >
+         </div> 
+        </div>
+          
+           
+            
+           <ion-card-header no-padding class="category-banner " >  
+                 <ion-card-title>
+   
+                 {{pro.name}}
+                
+               </ion-card-title>
+           
+             <p>Tienda Carmita</p>
+           </ion-card-header>
+   
+   
+           
+           <ion-chip style="width: 100%; justify-content: center;">
+             <ion-icon name="remove-outline" (click)="rest(i)" ></ion-icon>
+   
+             
+             
+             <ion-label  >{{this.cont[i]}}</ion-label>
+             
+             <ion-icon style="float:right ;" name="add-outline" (click)="sum(i)"></ion-icon >
+   
+   
+               
+           </ion-chip>
+   
+          
+           <ion-icon name="cart-outline" class="is">
+           
+           </ion-icon> 
+   
+   
+   
+           <ion-chip style="width: 100%; " >
+             <ion-label style="text-align: center;width: 100%;">Añadir</ion-label>
+             
+   
+               
+           </ion-chip>
+   
+   
+   
+         </ion-card>
+       
+   </ion-col>   
+   
+  </ion-row>
+   
+   
+   
+     </ion-row>
+   
+   </div>
+   
+   </ion-grid>
+   
 
-        </a>
 
 
-      </ion-col>
-    </ion-row>  
-  </ion-grid>
+
+
+
 
 
 </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

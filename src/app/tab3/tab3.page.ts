@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CategoryService } from '../servicios/category.service';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab3',
@@ -10,7 +12,7 @@ export class Tab3Page  implements OnInit{
 
 
 
-  constructor( private categoryService:CategoryService) {}
+  constructor( private categoryService:CategoryService ,private router :Router, private navctrl:NavController) {}
 
 //VARIABLES 
 categoryP=[];
@@ -20,6 +22,10 @@ ngOnInit(){
  
 }
 
+changePage(){
+this.router.navigate(['/store'])
+
+}
 
 
 
