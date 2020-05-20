@@ -16,6 +16,7 @@ import { AppComponent } from './app.component';
 import { from } from 'rxjs';
 import { AngularFireAuthModule, AngularFireAuth } from '@Angular/fire/auth';
 import { ComponentModule} from './component/component.module';
+import {HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ComponentModule} from './component/component.module';
   entryComponents: [],
   imports: [  
     ComponentModule,
+    HttpClientModule,
     BrowserModule,IonicModule.forRoot(), AppRoutingModule, AngularFireModule.initializeApp(firebaseConfig)],
   providers: [
     AngularFireModule,
