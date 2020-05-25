@@ -1,24 +1,37 @@
-<ion-menu side="start" menuId="first" contentId="content1">
+<ion-menu side="start" menuId="first" (ionDidOpen)="openmenu()" contentId="content1">
   <ion-header>
     <ion-toolbar>
       <ion-title>Navigate</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content>
+    <label *ngIf="this.nameuser!=null"    style="background-color: black; width: 15px;" >{{this.nameuser}}</label>
+
     <ion-list *ngFor="let pages of navigate">
     <ion-menu-toggle auto-hide="true">
       <ion-item [routerLink]="pages.url" routerDirection="forward">
           <ion-icon [name]="pages.icon" slot="start"></ion-icon>
              {{pages.title}} 
       </ion-item>
+      
     </ion-menu-toggle>
+    
     </ion-list>
+
+    <ion-list>
+      <ion-menu-toggle  *ngIf="this.nameuser!=null"  (click)="cerr()" auto-hide="true">
+        <ion-item>
+            Cerrar 
+        </ion-item>
+      </ion-menu-toggle>    
+    </ion-list>
+  
   </ion-content>
 </ion-menu>
+
 <ion-router-outlet id="content1"></ion-router-outlet>
+
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet ></ion-router-outlet>
 
-
-  
 </ion-app>

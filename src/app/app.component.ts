@@ -14,6 +14,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
   navigate : any;
+  nameuser:any=null;
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -30,6 +31,21 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  openmenu(){
+    let res= localStorage.getItem('login');
+    console.log(res);
+    if(res==='si'){
+     this.nameuser='peter';
+    }else{
+      this.nameuser=null
+    }
+
+  }
+  cerr(){
+    localStorage.setItem('login','no')
+  }
+
   sideMenu()
   {
     this.navigate =
