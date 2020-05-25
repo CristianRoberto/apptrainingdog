@@ -4,6 +4,7 @@ import { ProductoService } from '../servicios/producto.service';
 import { ModalController } from '@ionic/angular';
 import { ModalProductPage } from '../modal/modal-product/modal-product.page';
 import { TproductService } from '../servicios/tproduct.service';
+import { ModalStorePage } from '../modal/modal-store/modal-store.page';
 
 @Component({
   selector: 'app-productt',
@@ -52,6 +53,36 @@ export class ProducttPage implements OnInit {
    
     return await modal.present();
   }
+
+
+///////////////////
+
+async modalPrice() {
+  const modal2 = await this.modalctr.create({
+  
+    component: ModalStorePage,
+    cssClass:'modal-price',
+
+    // aqui componentes que se pueden enviar al modal 
+    
+
+    
+    componentProps: {
+      'firstName': 'Douglas',
+      'lastName': 'Adams',
+      'middleInitial': 'N'
+      
+
+ 
+    },
+  }
+  
+  );
+ 
+  return await modal2.present();
+}
+
+
 
 
 

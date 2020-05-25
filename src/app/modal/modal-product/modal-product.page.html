@@ -6,8 +6,13 @@
      
  
       <ion-title>
-        <ion-icon name="chevron-back-outline" (click)="exit()"></ion-icon>     Comprar
+          Comprar
       </ion-title>
+
+      <ion-buttons slot="start" color="danger"  (click)="exit()" >
+        <ion-icon slot="start" name="chevron-back-outline"  ></ion-icon>
+  
+      </ion-buttons> 
 
         <ion-back-button></ion-back-button>
       
@@ -41,8 +46,8 @@
 
 
 
-  <ion-button expand="full">Comprar</ion-button>
-
+ 
+  <ion-button expand="full" >Comprar</ion-button >
 
 
 </ion-content>

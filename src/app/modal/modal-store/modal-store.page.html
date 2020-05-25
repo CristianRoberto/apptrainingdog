@@ -1,0 +1,41 @@
+<ion-header>
+  
+</ion-header>
+
+<ion-content>
+
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>
+        Compra
+      </ion-label>
+<ion-label   style="text-align: center;  width: 100%; ">total: 7$</ion-label>
+      
+    </ion-list-header>
+  
+  
+    <ion-item>
+      <ion-label>Medidas</ion-label>
+      <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" placeholder="Unidad">
+        <ion-select-option value="brown">Unidad</ion-select-option>
+        <ion-select-option value="blonde">Docena</ion-select-option>
+        <ion-select-option value="black">Libra</ion-select-option>
+        <ion-select-option value="red">Kilo</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+
+<ion-item>
+<ion-label> Cantidad:</ion-label> 
+ <ion-input type="number" placeholder="1"></ion-input>
+
+</ion-item>
+
+
+
+  </ion-list>
+
+
+</ion-content>
+<ion-button  expand="full">Agregar al Carrito</ion-button>

@@ -9,11 +9,14 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab2PageRoutingModule } from './tab2-routing.module';
 import { ModalProductPage } from '../modal/modal-product/modal-product.page';
 import { ModalProductPageModule } from '../modal/modal-product/modal-product.module';
-import { ModalProductPageRoutingModule } from '../modal/modal-product/modal-product-routing.module';
+import { ModalStorePage } from '../modal/modal-store/modal-store.page';
+import { ModalStorePageModule } from '../modal/modal-store/modal-store.module';
 
 @NgModule({
   entryComponents:[
-    ModalProductPage
+    ModalProductPage,
+    ModalStorePage
+
   ],
   
   imports: [
@@ -23,6 +26,7 @@ import { ModalProductPageRoutingModule } from '../modal/modal-product/modal-prod
     CommonModule,
     FormsModule,
     ModalProductPageModule,
+    ModalStorePageModule,
     ExploreContainerComponentModule,
     Tab2PageRoutingModule
    

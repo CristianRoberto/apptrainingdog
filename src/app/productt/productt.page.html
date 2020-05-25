@@ -1,6 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>PRODUCTOS</ion-title>
+    <ion-title>Productos</ion-title>
+    
+
+    <ion-buttons slot="start" color="danger" >
+      <ion-icon slot="start" name="chevron-back-outline" routerLink="/store" ></ion-icon>
+
+    </ion-buttons> 
+
   </ion-toolbar>
 </ion-header>
 
@@ -56,7 +63,7 @@
           
            
             
-           <ion-card-header no-padding class="category-banner " >  
+           <ion-card-header no-padding class="category-banner " style="padding-bottom: 2px;" >  
                  <ion-card-title>
    
                  {{pro.name}}
@@ -68,7 +75,7 @@
    
    
            
-           <ion-chip style="width: 100%; justify-content: center;">
+          <!-- <ion-chip style="width: 100%; justify-content: center;">
              <ion-icon name="remove-outline" (click)="rest(i)" ></ion-icon>
    
              
@@ -81,21 +88,25 @@
                
            </ion-chip>
    
+          -->
           
-           <ion-icon name="cart-outline" class="is">
+   
+
+
+         
+  
+   
+           <ion-chip style="width: 100%;  " >
+            <ion-label style="text-align: center;width: 100%; " (click)="modalPrice()">Añadir</ion-label>
+            
+
+            <ion-icon  name="cart-outline" class="is">
            
-           </ion-icon> 
-   
-   
-   
-           <ion-chip style="width: 100%; " >
-             <ion-label style="text-align: center;width: 100%;">Añadir</ion-label>
-             
-   
-               
-           </ion-chip>
-   
-   
+            </ion-icon> 
+    
+              
+          </ion-chip>
+
    
          </ion-card>
        

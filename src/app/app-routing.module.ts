@@ -54,7 +54,7 @@ const routes: Routes = [
   {
     path: 'agregartiendas',
     loadChildren: () => import('./agregartiendas/agregartiendas.module').then( m => m.AgregartiendasPageModule)
-  },
+  }
  
 
 

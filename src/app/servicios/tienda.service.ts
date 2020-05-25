@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class TiendaService {private datas=[
     
-  {id:1,name:'PescachoP', propietario:'PROPIETARIO' , nombrep:'Sr. Roberto Gilces', ubicacion:'UBICACION', direccion:'Leonidas Plaza', region:'Manabi - Ecuador',  img :"https://image.freepik.com/vector-gratis/coleccion-diferentes-tipos-snacks_23-2147927928.jpg"},
+  {id:1,name:'La Saiba', tipo:'Carniceria' , direccion:'Av 24 y Calle 17 asasdasd sadasdasd asdasdasd sdasdasd ', img :"https://image.freepik.com/vector-gratis/coleccion-diferentes-tipos-snacks_23-2147927928.jpg"},
   {id:2,name:'La Curva', tipo:'Pescaderia' ,direccion:'Av 24 y Calle 17', img :"https://i.pinimg.com/originals/63/64/fb/6364fbeede3157aac881ed9c088d9c26.png"},
   {id:3,name:'Las Vegas', tipo:'Ferreteria' ,direccion:'Av 24 y Calle 17', img :"https://lookformedical.com/img/a/a4/Pear_peckham_78.jpg"},
   {id:4,name:'El Imperio', tipo:'Restaurant' ,direccion:'Av 24 y Calle 17', img :"https://i.pinimg.com/originals/63/64/fb/6364fbeede3157aac881ed9c088d9c26.png"},

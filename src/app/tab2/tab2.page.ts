@@ -3,6 +3,7 @@ import { ProductoService } from '../servicios/producto.service';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
 import { ModalProductPage } from '../modal/modal-product/modal-product.page';
+import { ModalStorePage } from '../modal/modal-store/modal-store.page';
 
 @Component({
   selector: 'app-tab2',
@@ -33,8 +34,12 @@ async presentModal() {
   const modal = await this.modalctr.create({
   
     component: ModalProductPage,
-    
+    cssClass:'product-modal',
+
     // aqui componentes que se pueden enviar al modal 
+    
+
+
     componentProps: {
       'firstName': 'Douglas',
       'lastName': 'Adams',
@@ -49,6 +54,37 @@ async presentModal() {
  
   return await modal.present();
 }
+
+
+
+///
+async modalPrice() {
+  const modal2 = await this.modalctr.create({
+  
+    component: ModalStorePage,
+    cssClass:'modal-price',
+
+    // aqui componentes que se pueden enviar al modal 
+    
+
+    
+    componentProps: {
+      'firstName': 'Douglas',
+      'lastName': 'Adams',
+      'middleInitial': 'N'
+      
+
+ 
+    },
+  }
+  
+  );
+ 
+  return await modal2.present();
+}
+
+
+
 
 //evento de refresco de pantalla se le puede pasar un arreglo y un limite de carga de archivos 
 

@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProducttPage } from './productt.page';
 import { ModalProductPage } from '../modal/modal-product/modal-product.page';
 import { ModalProductPageModule } from '../modal/modal-product/modal-product.module';
+import { ModalStorePage } from '../modal/modal-store/modal-store.page';
+import { ModalStorePageModule } from '../modal/modal-store/modal-store.module';
 
 const routes: Routes = [
   {
@@ -14,12 +16,16 @@ const routes: Routes = [
 
 @NgModule({
 entryComponents:[
-ModalProductPage
+ModalProductPage,
+ModalStorePage
+
 ],
 
   imports: [RouterModule.forChild(routes),
-  ModalProductPageModule
-  ],
+  ModalProductPageModule, 
+  ModalStorePageModule
+
+],
   exports: [RouterModule],
 })
 export class ProducttPageRoutingModule {}
