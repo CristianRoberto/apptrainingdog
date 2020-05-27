@@ -4,7 +4,7 @@
        <ion-title>Tiendas</ion-title>
 
    <ion-buttons slot="start" color="danger" >
-      <ion-icon slot="start" name="chevron-back-outline"  ></ion-icon>
+      <ion-icon slot="start" name="chevron-back-outline"  routerLink="/tabs/tab1" ></ion-icon>
 
     </ion-buttons> 
 
@@ -27,7 +27,7 @@
               
       <div >
            
-               <img src="{{store.img}}"  class="imgs" routerLink="/productt">
+               <img src="{{store.img}}"  class="imgs" (click)="changePage()">
 
         
 

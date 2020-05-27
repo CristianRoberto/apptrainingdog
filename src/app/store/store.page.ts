@@ -17,7 +17,7 @@ export class StorePage implements OnInit {
  
    ngOnInit() {
  this.storeT=this.storesv.getStore();  
- console.log(this.storeT); 
+ console.log(this.storeT);
  
   }
 
@@ -25,5 +25,10 @@ changePage(){
 this.router.navigate(['/productt'])
 
 }
+
+changePageB(){
+  this.router.navigate(['/tabs/tab1'])
+  
+  }
 
 }

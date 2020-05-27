@@ -14,16 +14,25 @@ import { Router } from '@angular/router';
 export class Tab1Page implements OnInit{
 
   
-  slideOptsOne=
+ slideOptsOne=
   {
-   pager:true
+    slidesPerView: 1.5,
   };
 
 
 
+  slideOptsTwo=
+  {
+    slidesPerView: 2.5,
+  };
 
+
+
+itens2=[];
  
   
+itens3=[];
+ 
   cart=[];
 itens=[];
 
@@ -34,7 +43,11 @@ constructor( private cartPService:CartPService, private router:Router)
 ngOnInit(){
   this.cart=this.cartPService.getCart();
   this.itens=this.cartPService.getProduct();     
-  
+
+  this.itens2=this.cartPService.getData2(); 
+
+  this.itens3=this.cartPService.getData3(); 
+  console.log(this.itens3)
   }
 addToCartProduct(product){
 this.cartPService.addProduct(product); 

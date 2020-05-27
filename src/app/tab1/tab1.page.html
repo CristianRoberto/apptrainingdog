@@ -4,7 +4,7 @@
       <ion-menu-button color="primary"></ion-menu-button>
     </ion-buttons>
     <ion-title>
-     TIENDAS FAVORITAS
+     Preferencias
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,38 +16,146 @@
   
  
    
-  <ion-card *ngFor="let cat of itens" class="category-block">
-    
-    <ion-card-header no-padding class="category-banner">
-      <ion-card-title>
-        {{cat.category}}
-      </ion-card-title>
-  </ion-card-header>
- 
-
-</ion-card> 
-
     <ion-grid>
       <ion-row>  
-        <ion-col *ngFor="let cat of itens">
+        <ion-col *ngFor="let cat of itens " >
                           
               <ion-list-header lines="inset">
                       <ion-label>Ofertas</ion-label>
                 </ion-list-header>
-                <ion-slides [options]="slideOptsOne">
-                  <ion-slide *ngFor="let product of cat.products">
-                    <ion-card >
-                      <ion-card-content>
-                        <ion-img src="{{product.img}}"></ion-img>
-                        <h2> <b>{{product.name}} </b></h2>
+                <ion-slides [options]="slideOptsOne "  >
+                  <ion-slide *ngFor="let product of cat.products" >
+                    <ion-card  class="card" >
+                      <ion-card-content style="padding:0px">
+                        <ion-img class="img1" src="{{product.img}}"></ion-img >
+                        
+                        <!--  <h2> <b>{{product.name}} </b></h2> -->
+ 
                         
                       </ion-card-content>
+ 
+                      <ion-button expand="full" fill="clear">Añadir</ion-button>
                     </ion-card>
                   </ion-slide>
 
                 </ion-slides>
-                </ion-col>
-      </ion-row>
+ 
+ 
+              </ion-col>
+ 
+
+<ion-col>
+  <ion-list-header lines="inset">
+    <ion-label>Ofertas</ion-label>
+</ion-list-header>
+
+  <ion-slides [options]="slideOptsTwo "  >
+    <ion-slide *ngFor="let product2 of itens2" >
+      <ion-card  class="card2"  >
+        <ion-card-content style="padding:0px">
+          <ion-img class="img2" src="{{product2.img}}"></ion-img >
+          
+          <!--  <h2> <b>{{product.name}} </b></h2> -->
+
+         
+ 
+          
+        </ion-card-content>
+        <ion-button expand="full" fill="clear">Añadir</ion-button>
+    
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+
+
+</ion-col>
+
+
+
+
+
+<ion-col>
+
+  <ion-list-header lines="inset">
+    <ion-label>Comida</ion-label>
+  </ion-list-header>
+  
+  <ion-slides [options]="slideOptsTwo "  >
+    <ion-slide *ngFor="let product2 of itens2" >
+      <ion-card  class="card2"  >
+        <ion-card-content style="padding:0px">
+          <ion-img class="img2" src="{{product2.img}}"></ion-img >
+          
+          <!--  <h2> <b>{{product.name}} </b></h2> -->
+  
+         
+  
+          
+        </ion-card-content>
+        <ion-button expand="full" fill="clear">Añadir</ion-button>
+    
+      </ion-card>
+    </ion-slide>
+  
+  </ion-slides>
+  
+  
+  
+<ion-col>
+  <ion-card style="padding: 0px;">
+<ion-img  src="https://www.easypromosapp.com/blog/wp-content/uploads/header_ideas_de_promociones_para_restaurantes.jpg"></ion-img>
+</ion-card>
+</ion-col>
+
+
+
+</ion-col>
+
+
+
+
+<ion-col>
+  <ion-list-header lines="inset">
+    <ion-label>Ofertas</ion-label>
+</ion-list-header>
+
+  <ion-slides [options]="slideOptsTwoq "  >
+    <ion-slide *ngFor="let product2 of itens2" >
+      <ion-card    >
+        <ion-card-content style="padding:0px">
+          <ion-img  src="{{product2.img}}"></ion-img >
+          
+          <!--  <h2> <b>{{product.name}} </b></h2> -->
+
+         
+ 
+          
+        </ion-card-content>
+        <ion-button expand="full" fill="clear">Añadir</ion-button>
+    
+      </ion-card>
+    </ion-slide>
+
+  </ion-slides>
+
+
+
+</ion-col>
+
+
+
+
+
+
+
+
+
+
+
+
+              </ion-row>
     </ion-grid>
 
        
