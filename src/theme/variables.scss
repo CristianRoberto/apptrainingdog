@@ -1,10 +1,326 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
-/** Ionic CSS Variables **/
-.modal-price{
-    --height: 50%;
-    border-radius: 15px;
-    padding: 25px;
-    }
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
 
+/** Ionic CSS Variables **/
+
+
+:root {
+
+    --ion-color-primary: rgb(0, 0, 0);
+    --ion-color-primary-rgb: 56,128,255;
+    --ion-color-primary-contrast: #000000;
+    --ion-color-primary-contrast-rgb: 255,255,255;
+    --ion-color-primary-shade: #3171e0;
+    --ion-color-primary-tint: #4c8dff;
+  
+    --ion-color-secondary: #00004e;
+    --ion-color-secondary-rgb: 61,194,255;
+    --ion-color-secondary-contrast: #ffffff;
+    --ion-color-secondary-contrast-rgb: 255,255,255;
+    --ion-color-secondary-shade: #36abe0;
+    --ion-color-secondary-tint: #50c8ff;
+  
+    --ion-color-tertiary: #ff0000;
+    --ion-color-tertiary-rgb: 82,96,255;
+    --ion-color-tertiary-contrast: #ffffff;
+    --ion-color-tertiary-contrast-rgb: 255,255,255;
+    --ion-color-tertiary-shade: #4854e0;
+    --ion-color-tertiary-tint: #6370ff;
+  
+    --ion-color-success:#00ddff ;
+    --ion-color-success-rgb: 45,211,111;
+    --ion-color-success-contrast: #000000;
+    --ion-color-success-contrast-rgb: 255,255,255;
+    --ion-color-success-shade: #28ba62;
+    --ion-color-success-tint: #42d77d;
+  
+    --ion-color-warning: rgb(55, 138, 255);
+    --ion-color-warning-rgb: 255,196,9;
+    --ion-color-warning-contrast: #000000;
+    --ion-color-warning-contrast-rgb: 0,0,0;
+    --ion-color-warning-shade: #e0ac08;
+    --ion-color-warning-tint: #ffca22;
+  
+    --ion-color-danger: #7bdaff;
+    --ion-color-danger-rgb: 235,68,90;
+    --ion-color-danger-contrast: #ffffff;
+    --ion-color-danger-contrast-rgb: 255,255,255;
+    --ion-color-danger-shade: #cf3c4f;
+    --ion-color-danger-tint: #ed576b;
+  
+    --ion-color-dark: rgb(0, 60, 99);
+    --ion-color-dark-rgb: 34,36,40;
+    --ion-color-dark-contrast: #ffffff;
+    --ion-color-dark-contrast-rgb: 255,255,255;
+    --ion-color-dark-shade: #000000;
+    --ion-color-dark-tint: #000000;
+  
+    --ion-color-medium:  rgb(222, 207, 0);
+    --ion-color-medium-rgb: 146,148,156;
+    --ion-color-medium-contrast: #000000;
+    --ion-color-medium-contrast-rgb: 255,255,255;
+    --ion-color-medium-shade: #000000;
+    --ion-color-medium-tint: #000000;
+  
+    --ion-color-light: rgb(255, 255, 255);
+    --ion-color-light-rgb: 244,245,248;
+    --ion-color-light-contrast: #000000;
+    --ion-color-light-contrast-rgb: 0,0,0;
+    --ion-color-light-shade: #d7d8da;
+    --ion-color-light-tint: #f5f6f9;
+  }
+
+
+/** Ionic CSS Variables **/
+  //ComponenteRegistro
+  .pop-over-style2{
+    --min-width : 65% !important;
+    --backdrop-opacity:0.8;
+    .buto{
+      background: #EFEFEF;
+      color: black; 
+      border: 1px black solid;
+    }  
+  }
+
+
+  //componenteLogin
+  .pop-over-style1{
+    --min-width : 60% !important;
+    --backdrop-opacity: 0.8;
+    .buto{
+      background: #ffffff;
+      color: black; 
+      border: 1px black solid;
+    }
+  }
+
+  
+
+
+/* BASIC */
+
+html {
+  background-color: #99f0ff;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 110vh;
+}
+
+a {
+  color: #92badd;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+
+
+
+
+/* STRUCTURE */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+
+//contenLogin
+#formContent {
+ text-align: center;
+ color: black;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* TABS */
+
+h2.inactive {
+  color: #000000;
+  font-size: 100px;
+}
+
+h2.active {
+  color: #000000;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+
+/* FORM TYPOGRAPHY*/
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #56baed;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(196, 212, 221, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(140, 203, 234, 0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover    {
+  background-color: #006a9f;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+input[type=text] ,input[type=password], input[type=number],  input[type=email]  {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: start;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  margin: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  height: 50px;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type=text]:focus ,input[type=password]:focus{
+  background-color: #fff;
+  border-bottom: 2px solid #5fbae9;
+}
+
+
+/* ANIMATIONS */
+
+/* Simple CSS3 Fade-in-down Animation */
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Simple CSS3 Fade-in Animation */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fadeIn {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.fadeIn.second {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.fadeIn.third {
+  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.fadeIn.fourth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+
+/* OTHERS */
+
+*:focus {
+    outline: none;
+} 
+
+#icon {
+  width:60%;
+}
+  
+.col-sm-4.col-form-label{
+border-radius: 10px;
+font-size: 18px;
+color: #000000;
+}
+
+
+.col-sm-8{
+  background: #006a9f;
+  border-radius: 10px;
+
+}

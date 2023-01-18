@@ -1,109 +1,47 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductoService } from '../servicios/producto.service';
 import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
-import { ModalProductPage } from '../modal/modal-product/modal-product.page';
-import { ModalStorePage } from '../modal/modal-store/modal-store.page';
+import {ProviderService}   from '../provider.service';
+import { HttpClient } from "@angular/common/http";
+import {map} from "rxjs/operators";
+
 
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
   styleUrls: ['tab2.page.scss']
 })
+
+
 export class Tab2Page implements OnInit {
-public cont =[];
-  constructor(private ProductoService:ProductoService,private router:Router, private modalctr:ModalController ) {
+  searchedUser: any;
 
-  } 
 
-products=[]
-
+  constructor(
+    private http: HttpClient) {}
+  
+  
   ngOnInit(){
-    //obtiene los productos del servicio ProductoService  y los guarda en un arreglo
-  this.products= this.ProductoService.getProduct(); 
-  //console.log(this.products.length)
-    for(let i=0 ; i<this.products.length;i++){
-        this.cont.push(1)
+  //  this.permission = true;
+  //this.getUsers().subscribe(res=>{
+    //this.users= res;
+   // this.searchedUser = this.users;
+
+  //});
+}
+
+
+  searchCustomer(event){
+    const text = event.target.value;
+   // this.searchedUser = this.users;
+    if(text && text.trim() !=''){
+      this.searchedUser =this.searchedUser.filter((user: any)=>{
+        return(user.name.toLoweCase().indexOf(text.toLowecase()) >-1  );
+            })
+          }
     }
-    console.log(this.cont)
-}
 
-/// envento modal 
-
-async presentModal() {
-  const modal = await this.modalctr.create({
-  
-    component: ModalProductPage,
-    cssClass:'product-modal',
-
-    // aqui componentes que se pueden enviar al modal 
-    
-
-
-    componentProps: {
-      'firstName': 'Douglas',
-      'lastName': 'Adams',
-      'middleInitial': 'N'
-      
-
- 
-    },
-  }
-  
-  );
- 
-  return await modal.present();
-}
-
-
-
-///
-async modalPrice() {
-  const modal2 = await this.modalctr.create({
-  
-    component: ModalStorePage,
-    cssClass:'modal-price',
-
-    // aqui componentes que se pueden enviar al modal 
-    
-
-    
-    componentProps: {
-      'firstName': 'Douglas',
-      'lastName': 'Adams',
-      'middleInitial': 'N'
-      
-
- 
-    },
-  }
-  
-  );
- 
-  return await modal2.present();
-}
-
-
-
-
-//evento de refresco de pantalla se le puede pasar un arreglo y un limite de carga de archivos 
-
-  doRefresh(event) {
-    console.log('Begin async operation');
-
-    setTimeout(() => {
-      console.log('Async operation has ended');
-      event.target.complete();
-    }, 2000);
   }
 
- sum(i){
-  this.cont[i]++;
- }
 
- rest(i){
-  
-   if(this.cont[i]>1) this.cont[i]--;
- }
 
-}

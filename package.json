@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "nodemon index.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -32,6 +32,7 @@
     "core-js": "^2.5.4",
     "firebase": "^7.14.3",
     "ngx-toastr": "^12.0.1",
+    "pg": "^8.8.0",
     "rxjs": "~6.5.1",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
@@ -87,5 +88,15 @@
     "platforms": [
       "android"
     ]
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/peterramirez196/ionicapp.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/peterramirez196/ionicapp/issues"
   }
 }

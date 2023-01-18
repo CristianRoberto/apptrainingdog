@@ -5,7 +5,8 @@ import{IonicModule} from '@ionic/angular'
  
 @NgModule({
   declarations: [
-    HeaderComponent],
+    HeaderComponent
+  ],
   imports: [
     CommonModule,
     IonicModule

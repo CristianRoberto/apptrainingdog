@@ -1,0 +1,28 @@
+
+    <ion-row style="justify-content: center;">      
+
+<form [formGroup]="formularioRegistro" (keyup.enter)="guardar()">
+  <ion-item color="dark" >
+    <ion-label position="floating">Nombre Usuario</ion-label>
+    <ion-input color="secondary" formControlName="nombre"></ion-input>
+  </ion-item>
+  <ion-item color="dark" >
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input color="secondary" formControlName="password" type="password" ></ion-input>
+  </ion-item>
+  <ion-item color="dark" >
+    <ion-label position="floating">Confirmar contraseña</ion-label>
+    <ion-input color="secondary" formControlName="confirmacionPassword" type="password"></ion-input>
+  </ion-item>
+  <br>
+
+
+
+<div class="ingresar">
+<ion-button (click)="guardar()">Guardar Nuevo Usuario
+  </ion-button>
+</div>
+</form>
+
+    </ion-row>
+

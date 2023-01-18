@@ -1,24 +1,14 @@
-
-
-ion-img{
- height: 100px;  
- 
+.centered-p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: white;
 }
 
-.is{font-size: 25px; 
-    position: absolute;
-    right: 6%;
-    bottom: 30%; 
-    }
-.precio{
-font-size:16px;
-
+div svg{
+  float: right;
+  height: 60px;
+  width: 140px;
+background: red;  
 }
-
-.chip{
-    float: right;
-    bottom: -30%;
-}
-
-
-    

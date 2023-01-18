@@ -1,0 +1,82 @@
+<ion-header class="header">
+  INGRESAR NUEVA MASCOTA
+</ion-header>
+
+<ion-content color="danger"  >
+  <ion-grid>
+    <ion-row style="justify-content: center;">      
+      <ion-col size="10" > 
+      <!--  <div class="card-body" style="border: #d7d8da 1px solid;"> -->
+            <!--se crea un nuevo formulario llamado ngform-->
+         <form #productForm="ngForm" >    
+              <div class="form-group row">
+            <label  class="col-sm-4 col-form-label">Foto</label>
+            <div class="col-sm-8">
+              <input type="file" placeholder="InsertarFoto" name="foto" required  [(ngModel)]="elementos.foto" (change)="cargaArchivo($event.target.files)"   class="form-control-file">
+            </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">NombresRaza</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="NombreRaza" required name="nombreraza" [(ngModel)]="elementos.nombreraza" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Color</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Color" required name="color" [(ngModel)]="elementos.color" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Edad</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Edad" required name="edad" [(ngModel)]="elementos.edad" class="form-control"  >
+              </div>
+            </div>
+
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Estatura</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Estatura" required name="estatura" [(ngModel)]="elementos.estatura" class="form-control"  >
+              </div>
+            </div>
+  
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Vacunas</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Vacunas" required name="vacunas" [(ngModel)]="elementos.vacunas" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Descripcion</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Descripcion" required name="descripcion" [(ngModel)]="elementos.descripcion" class="form-control"  >
+              </div>
+            </div>
+  
+  
+  
+  
+
+
+
+
+          </form> 
+       </ion-col> 
+    </ion-row>
+   
+    <ion-row > 
+      <ion-col size="12" style="margin-top: 5px;" >
+        <div  class="text-right">
+          <button type="button" (click)="Guardar(productForm)" class="btn btn-primary buto">Guardar Nueva Mascota</button>
+       </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,83 @@
+<ion-header class="header">
+  Editar Perfil
+</ion-header>
+
+<ion-content color="danger"  >
+  <ion-grid>
+    <ion-row style="justify-content: center;">      
+      <ion-col size="10" > 
+        <div class="card-body" style="border: #d7d8da 1px solid;">
+          <form #productForm="ngForm" >
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label">Cedula</label>
+                <div class="col-sm-8">
+                  <input type="text" maxlength="10" minlength="10" pattern="[0-9]+" placeholder="Cedula"  required name="cedula" [(ngModel)]="elementos.cedula" class="form-control"  >
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label  class="col-sm-4 col-form-label">Correo Electronico</label>
+                <div class="col-sm-8">
+                  <input type="text" placeholder="CorroElectronico"  required name="correoelectronico" [(ngModel)]="elementos.correoelectronico" class="form-control"  >
+                </div>
+              </div>
+            
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Nombres</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Nombres" required name="nombre" [(ngModel)]="elementos.nombre" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Apellidos</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Apellidos" required name="apellidos" [(ngModel)]="elementos.apellidos" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Direccion</label>
+              <div class="col-sm-8">
+                <input type="text" placeholder="Direccion" required name="direccion" [(ngModel)]="elementos.direccion" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Telefono</label>
+              <div class="col-sm-8">
+                <input type="text" maxlength="10" minlength="10" pattern="[0-9]+" placeholder="Telefono" required name="telefono" [(ngModel)]="elementos.telefono" class="form-control"  >
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Contraseña</label>
+              <div class="col-sm-8">
+                <input type="password" placeholder="Contraseña" required name="password" [(ngModel)]="elementos.password" class="form-control"  >
+              </div>
+            </div>  
+
+         
+
+            <div class="form-group row">
+              <label  class="col-sm-4 col-form-label">Foto</label>
+              <div class="col-sm-8">
+                <input type="file" name="formato"  placeholder="Foto" required [(ngModel)]="elementos.formato" (change)="cargaArchivo($event.target.files)"   class="form-control-file">
+              </div>
+            </div> 
+          </form>
+        </div>
+      </ion-col> 
+    </ion-row>
+   
+    <ion-row > 
+      <ion-col size="12" style="margin-top: 5px;" >
+        <div  class="text-right">
+          <button type="button" (click)="Guardar(productForm)" class="btn btn-primary buto">Actualizar</button>
+       </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+

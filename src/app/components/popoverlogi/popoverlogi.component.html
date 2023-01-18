@@ -1,0 +1,56 @@
+<ion-header class="header">
+  LOGIN
+</ion-header>
+
+<ion-content color="danger"  >
+
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <!-- Icon -->
+    
+      <div class="fadeIn first">
+        <img src="assets/icon/dog.png" alt="">
+
+        <img src="assets/icon/logi.png" id="icon" alt="User Icon"  height="120px">
+      </div>
+
+
+      <h1 class="h1">Ingresar Datos<br> Login</h1>
+     
+      <!-- Login Form formulario login -->
+    
+      <div *ngIf="mensaje!=''" class="alert alert-success">{{mensaje}}</div>
+  
+      <form [formGroup]="formulario" (ngSubmit)="ValidarLogin()" *ngIf="!logueado">
+        <ul>
+          <li>
+           <div *ngIf="formulario.get('usuario').errors && formulario.get('usuario').hasError('required') && formulario.touched">
+             <div class="alert alert-danger" role="alert">
+               * Correo obligatorio
+             </div>
+           </div>
+           <div class="alert alert-danger" *ngIf="formulario.get('usuario').errors && formulario.get('usuario').hasError('email')">
+             Formato de Correo electrónico no es el correcto
+           </div>   
+           <input type='email' formControlName="usuario" placeholder="Usuario" class="fadeIn second">
+          </li>
+          <li>
+           <input type='password' formControlName="password" placeholder="Password" class="fadeIn second">
+         </li>
+         <li>
+           <button class="botoniniciar" type="submit"  >Iniciar Sessión</button>
+         </li>
+       </ul>
+      </form>    
+    </div>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-buttons slot="end">
+      <ion-button class="underlineHover" (click)="registrarse()">Registrarse?
+      </ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

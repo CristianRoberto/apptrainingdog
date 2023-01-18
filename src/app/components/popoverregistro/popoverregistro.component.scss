@@ -1,0 +1,23 @@
+.header{
+    background: #00aaff;
+       text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+.btn.btn-primary.buto{
+    background-color: rgb(35, 32, 32);
+    color: rgb(255, 255, 255);
+    background: #006ca3;
+    height: 60px;
+    width: 200px;  
+    font-size: 19px; 
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+
+}
+
+.btn.btn-primary.buto:hover{
+    background: #001c29;
+}

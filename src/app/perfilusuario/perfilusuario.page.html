@@ -1,0 +1,91 @@
+<ion-header [translucent]="true">
+	<ion-toolbar color="dark">
+		<ion-buttons slot="start">
+			<ion-back-button color="danger" defaultHref="usuarios"></ion-back-button>
+		  </ion-buttons>
+	  <ion-title class="centered-p" >
+		 	Perfil Usuario
+		</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+	<ion-card>
+		<ion-card-header class="tilecar">
+			<img width="600px" height="300px" src="{{user.foto}}"/>
+		  <ion-card-title>{{user.nombre}}<br>{{user.apellidos}}</ion-card-title>
+		  <ion-card-subtitle style="text-align: center;">{{user.usuario}} <br>{{user.direccion}}
+		  </ion-card-subtitle>
+		</ion-card-header>
+		
+		<ion-toolbar>	
+			<ion-buttons slot="primary" (click)="editarperfil()"    >
+			  <ion-button fill="outline">
+				Editar Usuario
+				<ion-icon slot="end" name="create"></ion-icon>
+			  </ion-button>
+			</ion-buttons>
+		</ion-toolbar>
+
+
+
+	</ion-card>
+
+
+	<ion-content>
+ 
+
+		<ion-grid class="ion-text-center">
+	  
+		  <ion-row class="ion-margin">
+			<ion-col>
+			  <ion-title>
+				<ion-text color="default">
+				  Your title remove if don't want use
+				</ion-text>
+			  </ion-title>
+			</ion-col>
+		  </ion-row>
+	  
+		  <ion-row class="header-row">
+			<ion-col>
+			  <ion-text>Data</ion-text>
+			</ion-col>
+	  
+			<ion-col>
+			  <ion-text>Cliente</ion-text>
+			</ion-col>
+	  
+			<ion-col>
+			  <ion-text>Pagamento</ion-text>
+			</ion-col>
+		  </ion-row>
+	  
+	  
+		  <ion-row>
+			<ion-col>
+			  <ion-text>
+				  19/10/2020
+			  </ion-text>
+			</ion-col>
+	  
+			  <ion-col>
+				<ion-text>
+				  Nome
+				</ion-text>
+			  </ion-col>
+		
+			  <ion-col>
+				<ion-text>
+				  R$ 200
+				</ion-text>
+			  </ion-col>
+		  </ion-row>
+	  
+		</ion-grid>
+	  </ion-content>
+
+			
+</ion-content>
